@@ -1,0 +1,51 @@
+.page-main {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.page-main__inner {
+	position: absolute;	
+	width: 320px;
+	top: 0%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
+
+.page-main__title {
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Exo 2', sans-serif;	
+	font-weight: 100;
+	color: white;
+}
+
+@media (min-width: @tablet-width) {
+	.page-main__inner {
+		width: @tablet-width;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-main__inner {
+		width: 100%;
+	}
+}
+
+@media (min-width: @desktop-width) and (min-height: 650px) {
+	.page-main__inner {
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (min-width: @block-width) {
+	.page-main__inner {
+		width: @block-width;
+	}
+}

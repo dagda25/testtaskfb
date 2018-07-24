@@ -1,0 +1,33 @@
+{
+  "name": "testTaskFunbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое задание",
+  "devDependencies": {
+    "autoprefixer": "7.1.x",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.0",
+    "run-sequence": "^2.2.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "engines": {
+    "node": "8.2"
+  }
+}
